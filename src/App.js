@@ -1,4 +1,4 @@
-// feature 1
+// repository check
 import React, {Component} from 'react';
 import Cart from './components/Cart';
 import Filter from './components/Filter';
