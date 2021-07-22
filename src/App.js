@@ -7,14 +7,20 @@ import data from './data.json';
 
 class App extends Component {
 
+  // .parse() is reverse of stringify i.e convert string to JSON
+
   constructor(){
     super();
     this.state = {
       products: data.products,
-      cartItems: [],
+      cartItems: localStorage.getItem("cartItems")? JSON.parse(localStorage.getItem("cartItems")) : [],
       size: "",
       sort: ""
     };
+  }
+
+  createOrder = (orders) => {
+    alert("Need to save order for" + orders.name);
   }
 
   removeFromCart = (product) => {
@@ -23,6 +29,9 @@ class App extends Component {
     this.setState({
       cartItems: cartItems.filter((x) => x._id !== product._id)
     })
+
+    // Adding items to our local storage for making it persistent
+    localStorage.setItem("cartItems", JSON.stringify(cartItems.filter((x) => x._id !== product._id)));
 
     // cartItems.filter( (x) => x._id !== product._id) is used to filter and show those items whose id is not 
     // is not equal to the id of the product selected by the user to remove
@@ -42,6 +51,8 @@ class App extends Component {
       cartItems.push({...product, count: 1 });
     }
     this.setState({cartItems});
+    // Adding items to our local storage for making it persistent
+    localStorage.setItem("cartItems", JSON.stringify(cartItems));
   };
 
   sortProducts = (event) => {
@@ -100,6 +111,7 @@ class App extends Component {
             </div>
             <div className="sidebar">
               <Cart 
+                createOrder={this.createOrder}
                 cartItems={this.state.cartItems} 
                 removeFromCart={this.removeFromCart}
               ></Cart>
