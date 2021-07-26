@@ -119,4 +119,9 @@ class Products extends Component {
 // connect accepts 2 parameters 
 // first which state we are going to use
 // second parameter is the list of actions that needs to be taken
-export default connect((state) => ({products: state.products.items}),{fetchProducts})(Products);
+export default connect(
+    (state) => (
+            {products: state.products.filteredItems}
+        ),
+    {fetchProducts}
+)(Products);
