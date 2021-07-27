@@ -1,4 +1,4 @@
-import { FETCH_PRODUCTS, FILTER_PRODUCT_BY_SIZE, ORDER_PRODUCT_BY_PRICE } from "../types";
+import { FETCH_PRODUCTS, FILTER_PRODUCT_BY_SIZE, ORDER_PRODUCT_BY_PRICE, ADD_TO_CART, REMOVE_FROM_CART } from "../types";
 
 // Defining of Action and dispatching that action with the required data that need 
 // to be passed for updating the state
@@ -41,5 +41,8 @@ export const sortProducts = (filteredProducts, sort) => (dispatch) => {
             sort: sort,
             items: sortedProducts
         }
-    })
+    });
 }
+
+
+
