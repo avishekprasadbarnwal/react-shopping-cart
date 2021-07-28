@@ -1,8 +1,9 @@
 # This is a React base Ecommerce Website
+![Screenshot 2021-07-28 120840](https://user-images.githubusercontent.com/49061068/127276231-af6eec5a-825e-4147-ae4d-ea4c093008c1.png)
+![Screenshot 2021-07-28 121108](https://user-images.githubusercontent.com/49061068/127276286-93c6d81b-2d85-40e3-a80e-9c997e36ff4d.png)
 
-# Create React App
 
-## Table Of Content
+## WorkFlow or Table Of Content
 
 1. Introduction
 
@@ -254,109 +255,3 @@
       19. set initial cartItems to localStorage
       20. check result
       21. update task and branch
-
-5. Advanced Topics
-
-   1. Create Order
-      1. Backend
-      2. server.js
-      3. create order modal
-      4. get /api/orders
-      5. post /api/orders
-      6. delete /api/orders/:id
-      7. Frontend
-      8. create types
-      9. types.js
-      10. CLEAR_ORDER, CLEAR_CART, CREATE_ORDER
-      11. create actions
-      12. actions/orderActions.js
-      13. createOrder(order)
-      14. clearOrder()
-      15. create reducers
-      16. reducers/orderReducers.js
-      17. case CREATE_ORDER
-      18. case CLEAR_ORDER
-      19. Update Cart Component
-      20. components/Cart.js
-      21. connect order, createOrder, clearOrder
-      22. form onSubmit={this.createOrder}
-      23. createOrder() this.props.createOrder(order)
-      24. closeModal() this.props.clearOrder()
-      25. render()
-      26. const { cartItems, order } = this.props;
-      27. {order && (<Modal></Modal>}
-   2. Manage Orders
-      1. Add new page
-      2. Install react-router-dom
-      3. App.js
-      4. Import BrowserRouter, Route, Link
-      5. render()
-      6. BrowserRouter
-      7. Route path="/admin" component={AdminScreen}
-      8. Route path="/" exact={true} component={HomeScreen}
-      9. HomeScreen.js
-      10. <Filter /> <Products /> <Cart />
-      11. AdminScreen.js
-      12. <Orders />
-      13. components/Orders.js
-      14. render() <div> Orders </div>
-      15. Backend
-      16. server.js
-      17. app.get("/api/orders")
-      18. app.delete("/api/orders/:id")
-      19. Frontend
-      20. types.js
-      21. FETCH_ORDERS
-      22. actions/orderActions.js
-      23. fetchOrders()
-      24. reducers/orderReducers.js
-      25. case FETCH_ORDERS {orders: action.payload}
-      26. components/Orders.js
-      27. connect orders, fetchOrders
-      28. componentDidMount() fetchOrders
-      29. render()
-      30. !orders <div>Loading...</div>
-      31. table orders
-      32. index.css
-      33. style orders
-
-6. Deploy Website
-   1. Create MongoDB Cloud Database
-   2. Login to https://www.mongodb.com/cloud
-   3. Add database user
-   4. Left sidebar> Select Security > Database Access
-   5. Select Add New User button
-   6. Enter user name and password and click Add User
-   7. Add IP whitelist
-   8. Left sidebar > Select Security > Network Access
-   9. Select Add IP Address
-   10. Enter 0.0.0.0/0 in Whitelist Entry and click Confirm
-   11. Get connection string
-   12. Left sidebar > Select Altas > Cluster
-   13. Click Connect
-   14. Click Connect to your application
-   15. Click Copy button
-   16. Step 2: Deploy On Heroku
-   17. Create git repository in amazona folder using git init
-   18. Create Heroku Account at heroku.com
-   19. Heroku
-   20. Create Heroku account on heroku.com
-   21. Install Heroku cli https://devcenter.heroku.com/articles/heroku-cli
-   22. Open Terminal
-   23. heroku login
-   24. heroku apps:create react-shopping-cart-best
-   25. Edit package.json
-   26. "engines": { "node": "12.4.0", "npm": "6.9.0"}
-   27. Create Procfile
-   28. web: node server.js
-   29. Set MongoDB connection string in Heroku
-   30. Open Heroku apps https://dashboard.heroku.com/apps/
-   31. Select your apps, open Setting Tab and click Reveal Config Vars
-   32. Add key MONGODB_URL
-   33. Enter copied connection string from the previous step
-   34. Update database name and username and password
-   35. Add key NODE_MODULES_CACHE and value false
-   36. app.use("/", express.static(\_\_dirname + "/build"));
-   37. app.get("/", (req, res) => res.sendFile(\_\_dirname + "/build/index.html"));
-   38. git add . && git commit -m "publish"
-   39. git push heroku
