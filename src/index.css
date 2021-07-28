@@ -6,6 +6,7 @@ html{
 }
 
 body, #root{
+  background-color: #e3f4f5;
   height: 100vh;
   margin: 0;
 }
@@ -33,7 +34,7 @@ a:hover{
 
 header{
   grid-area: header;
-  background-color: #203040;
+  background-color: #193d61;
   color: #ffffff;
   display: flex;
   align-items: center;
@@ -118,8 +119,8 @@ footer{
 
 .button {
   padding: 1rem;
-  border: 0.1rem #c0c0c0 solid;
-  background-color: #f0f0f0;
+  border: 0.1rem #130f0f solid;
+  background-color: #f09999;
   cursor: pointer;
 }
 
@@ -129,7 +130,7 @@ footer{
 
 .button.primary{
   text-align: center;
-  background-color: #f0c040;
+  background-color: #40aaf0;
 }
 
 a{
@@ -251,7 +252,32 @@ input {
   z-index: 1000;
 }
 
+/* Order details */
+.order-details{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
 
+.order-details li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
+}
 
+.order-details li div {
+  padding: 10px;
+}
+
+.order-details .items {
+  text-align: right;
+  padding: 0;
+}
+
+.success-message {
+  color: green;
+}
 
