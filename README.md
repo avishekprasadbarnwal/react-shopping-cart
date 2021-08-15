@@ -21,7 +21,7 @@
       13. Admin Section to see list of products
       14. Using postman to add or remove products and orders
    2. Tools and Technologies
-      1. JavaScript (arrow functions, array functions, spread Operators, ...)
+      1. JavaScript 
       2. React (react-touter-dom, react-reveal, react-modal)
       3. Redux (react-redux, redux-thunk)
       4. Node (express, body-parser, Environment Variables, nodemon)
@@ -31,5 +31,4 @@
       8. Git (create repo, commit, remote, create and push branch)
       9. Github (create repo, connect to local repo, pull request and merge)
       10. Postman ( send get, post, put and delete requests to apis)
-      11. Deployment ( Heroku, MongoDB Atlas Cloud)
    
