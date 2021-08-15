@@ -3,12 +3,9 @@
 ![Screenshot 2021-07-28 121108](https://user-images.githubusercontent.com/49061068/127276286-93c6d81b-2d85-40e3-a80e-9c997e36ff4d.png)
 
 
-## WorkFlow or Table Of Content
+## Short Description
 
-1. Introduction
-
-   1. Introduction
-      This is a fully functional Shopping Cart with Instant feedback and animated design , displaying the product by pop-up using react-modal , Adding and removing products to the       shopping cart  
+   1. Introduction  
       1. Fully-Functional Shopping Cart with Instant Feedback and animated design. 
       2. Instant Feedback
       3. Animated and Intuitive Design
