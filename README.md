@@ -1,4 +1,4 @@
-# This is a React base Ecommerce Website
+# This is a React based Ecommerce Website
 ![Screenshot 2021-07-28 120840](https://user-images.githubusercontent.com/49061068/127276231-af6eec5a-825e-4147-ae4d-ea4c093008c1.png)
 ![Screenshot 2021-07-28 121108](https://user-images.githubusercontent.com/49061068/127276286-93c6d81b-2d85-40e3-a80e-9c997e36ff4d.png)
 
